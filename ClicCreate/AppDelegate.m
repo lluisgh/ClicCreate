@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Lluís Gómez Hernando. All rights reserved.
 //
 
-#import "LGHAppDelegate.h"
+#import "AppDelegate.h"
 
-@implementation LGHAppDelegate
+@implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
