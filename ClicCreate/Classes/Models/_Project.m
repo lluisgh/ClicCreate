@@ -52,6 +52,11 @@ const struct ProjectFetchedProperties ProjectFetchedProperties = {
 
 
 
+@dynamic path;
+
+
+
+
 
 
 @dynamic projectID;

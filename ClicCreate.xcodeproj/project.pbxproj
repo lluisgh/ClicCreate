@@ -26,6 +26,7 @@
 		2F4EEC1117EE07AC002F39A9 /* ActivitySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EEC1017EE07AC002F39A9 /* ActivitySequence.m */; };
 		2F4EEC1617EE085C002F39A9 /* _Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EEC1317EE085C002F39A9 /* _Project.m */; };
 		2F4EEC1717EE085C002F39A9 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EEC1517EE085C002F39A9 /* Project.m */; };
+		2F917DF717EF6F7200402A0A /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F917DF617EF6F7200402A0A /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D6766DA85EC546119626B316 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D96217F78E043E38E6EF11E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,8 @@
 		2F4EEC1317EE085C002F39A9 /* _Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Project.m; path = Classes/Models/_Project.m; sourceTree = "<group>"; };
 		2F4EEC1417EE085C002F39A9 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Project.h; path = Classes/Models/Project.h; sourceTree = "<group>"; };
 		2F4EEC1517EE085C002F39A9 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Project.m; path = Classes/Models/Project.m; sourceTree = "<group>"; };
+		2F917DF617EF6F7200402A0A /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		2F917DF817EF6F9500402A0A /* GDataXMLNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
 		4A5A18C8E1F74692ABED9401 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -175,6 +178,7 @@
 		2F4EEC0A17EE075A002F39A9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2F917DF517EF6F6400402A0A /* GDataXML */,
 				2F4EEC0B17EE075F002F39A9 /* Models */,
 			);
 			name = Classes;
@@ -193,6 +197,15 @@
 				2F4EEC1017EE07AC002F39A9 /* ActivitySequence.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		2F917DF517EF6F6400402A0A /* GDataXML */ = {
+			isa = PBXGroup;
+			children = (
+				2F917DF817EF6F9500402A0A /* GDataXMLNode.h */,
+				2F917DF617EF6F7200402A0A /* GDataXMLNode.m */,
+			);
+			name = GDataXML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F4EEC0E17EE079B002F39A9 /* ProjectSettings.m in Sources */,
+				2F917DF717EF6F7200402A0A /* GDataXMLNode.m in Sources */,
 				2F11D19317EA132900B290C6 /* AppDelegate.m in Sources */,
 				2F4EEC1117EE07AC002F39A9 /* ActivitySequence.m in Sources */,
 				2F11D19617EA132900B290C6 /* ClicCreate.xcdatamodeld in Sources */,

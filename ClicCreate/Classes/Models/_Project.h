@@ -32,6 +32,14 @@ extern const struct ProjectFetchedProperties {
 
 
 
+@property (nonatomic, strong) NSString* path;
+
+
+
+//- (BOOL)validatePath:(id*)value_ error:(NSError**)error_;
+
+
+
 
 
 @property (nonatomic, strong) NSNumber* projectID;
@@ -56,6 +64,10 @@ extern const struct ProjectFetchedProperties {
 @end
 
 @interface _Project (CoreDataGeneratedPrimitiveAccessors)
+
+
+- (NSString*)primitivePath;
+- (void)setPrimitivePath:(NSString*)value;
 
 
 
