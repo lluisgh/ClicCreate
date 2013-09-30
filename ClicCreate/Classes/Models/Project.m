@@ -58,6 +58,7 @@
     NSMutableSet *activities = [[NSMutableSet alloc] init];
     for (GDataXMLElement *xmlElement in nodes) {
         Activity *activity = [Activity activityFromXML:xmlElement];
+        [activity setProject:self];
         [activities addObject:activity];
     }
     
