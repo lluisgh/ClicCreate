@@ -27,7 +27,10 @@
 		2F4EEC1617EE085C002F39A9 /* _Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EEC1317EE085C002F39A9 /* _Project.m */; };
 		2F4EEC1717EE085C002F39A9 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EEC1517EE085C002F39A9 /* Project.m */; };
 		2F917DF717EF6F7200402A0A /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F917DF617EF6F7200402A0A /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D6766DA85EC546119626B316 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D96217F78E043E38E6EF11E /* libPods.a */; };
+		2F917DFA17EF70C600402A0A /* ant_roma.jclic in Resources */ = {isa = PBXBuildFile; fileRef = 2F917DF917EF70C600402A0A /* ant_roma.jclic */; };
+		2FDD9DEE17F9D2C200BA3B32 /* _Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDD9DED17F9D2C200BA3B32 /* _Activity.m */; };
+		2FFE41FC17F34F2800F315A7 /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE41FB17F34F2800F315A7 /* Activity.m */; };
+		2FFE41FF17F34F3600F315A7 /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE41FE17F34F3600F315A7 /* Media.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,13 @@
 		2F4EEC1517EE085C002F39A9 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Project.m; path = Classes/Models/Project.m; sourceTree = "<group>"; };
 		2F917DF617EF6F7200402A0A /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
 		2F917DF817EF6F9500402A0A /* GDataXMLNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		2F917DF917EF70C600402A0A /* ant_roma.jclic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ant_roma.jclic; sourceTree = "<group>"; };
+		2FDD9DEC17F9D2C200BA3B32 /* _Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Activity.h; path = Classes/Models/_Activity.h; sourceTree = "<group>"; };
+		2FDD9DED17F9D2C200BA3B32 /* _Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Activity.m; path = Classes/Models/_Activity.m; sourceTree = "<group>"; };
+		2FFE41FA17F34F2800F315A7 /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Activity.h; path = Classes/Models/Activity.h; sourceTree = "<group>"; };
+		2FFE41FB17F34F2800F315A7 /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Activity.m; path = Classes/Models/Activity.m; sourceTree = "<group>"; };
+		2FFE41FD17F34F3600F315A7 /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
+		2FFE41FE17F34F3600F315A7 /* Media.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Media.m; sourceTree = "<group>"; };
 		4A5A18C8E1F74692ABED9401 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -82,7 +92,6 @@
 				2F11D18717EA132900B290C6 /* CoreData.framework in Frameworks */,
 				2F11D18517EA132900B290C6 /* UIKit.framework in Frameworks */,
 				2F11D18117EA132900B290C6 /* Foundation.framework in Frameworks */,
-				D6766DA85EC546119626B316 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +158,7 @@
 		2F11D18917EA132900B290C6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2F917DF917EF70C600402A0A /* ant_roma.jclic */,
 				2F11D18A17EA132900B290C6 /* ClicCreate-Info.plist */,
 				2F11D18B17EA132900B290C6 /* InfoPlist.strings */,
 				2F11D18E17EA132900B290C6 /* main.m */,
@@ -187,6 +197,8 @@
 		2F4EEC0B17EE075F002F39A9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2FDD9DEC17F9D2C200BA3B32 /* _Activity.h */,
+				2FDD9DED17F9D2C200BA3B32 /* _Activity.m */,
 				2F4EEC1217EE085C002F39A9 /* _Project.h */,
 				2F4EEC1317EE085C002F39A9 /* _Project.m */,
 				2F4EEC1417EE085C002F39A9 /* Project.h */,
@@ -195,6 +207,10 @@
 				2F4EEC0D17EE079B002F39A9 /* ProjectSettings.m */,
 				2F4EEC0F17EE07AC002F39A9 /* ActivitySequence.h */,
 				2F4EEC1017EE07AC002F39A9 /* ActivitySequence.m */,
+				2FFE41FA17F34F2800F315A7 /* Activity.h */,
+				2FFE41FB17F34F2800F315A7 /* Activity.m */,
+				2FFE41FD17F34F3600F315A7 /* Media.h */,
+				2FFE41FE17F34F3600F315A7 /* Media.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -288,6 +304,7 @@
 			files = (
 				2F11D18D17EA132900B290C6 /* InfoPlist.strings in Resources */,
 				2F11D19817EA132900B290C6 /* Images.xcassets in Resources */,
+				2F917DFA17EF70C600402A0A /* ant_roma.jclic in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,11 +357,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F4EEC0E17EE079B002F39A9 /* ProjectSettings.m in Sources */,
+				2FFE41FC17F34F2800F315A7 /* Activity.m in Sources */,
 				2F917DF717EF6F7200402A0A /* GDataXMLNode.m in Sources */,
 				2F11D19317EA132900B290C6 /* AppDelegate.m in Sources */,
 				2F4EEC1117EE07AC002F39A9 /* ActivitySequence.m in Sources */,
 				2F11D19617EA132900B290C6 /* ClicCreate.xcdatamodeld in Sources */,
+				2FFE41FF17F34F3600F315A7 /* Media.m in Sources */,
 				2F11D18F17EA132900B290C6 /* main.m in Sources */,
+				2FDD9DEE17F9D2C200BA3B32 /* _Activity.m in Sources */,
 				2F4EEC1717EE085C002F39A9 /* Project.m in Sources */,
 				2F4EEC1617EE085C002F39A9 /* _Project.m in Sources */,
 			);

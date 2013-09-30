@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12F37" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Activity" representedClassName="Activity" syncable="YES">
+        <attribute name="activityID" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="activities" inverseEntity="Project" syncable="YES"/>
+    </entity>
     <entity name="Project" representedClassName="Project" syncable="YES">
-        <attribute name="path" optional="YES" transient="YES" attributeType="String" syncable="YES"/>
-        <attribute name="projectID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="projectID" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="xmlFilePath" optional="YES" transient="YES" attributeType="String" syncable="YES"/>
+        <relationship name="activities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="project" inverseEntity="Activity" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Activity" positionX="0" positionY="0" width="0" height="0"/>
         <element name="Project" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

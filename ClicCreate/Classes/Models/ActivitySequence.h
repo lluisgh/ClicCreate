@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#import "GDataXMLNode.h"
+
 @interface ActivitySequence : NSObject
+
++ (ActivitySequence *)activitySequenceFromXML:(GDataXMLElement *)xmlElement;
 
 @end

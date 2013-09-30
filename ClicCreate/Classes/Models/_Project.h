@@ -5,16 +5,18 @@
 
 
 extern const struct ProjectAttributes {
-	__unsafe_unretained NSString *path;
 	__unsafe_unretained NSString *projectID;
+	__unsafe_unretained NSString *xmlFilePath;
 } ProjectAttributes;
 
 extern const struct ProjectRelationships {
+	__unsafe_unretained NSString *activities;
 } ProjectRelationships;
 
 extern const struct ProjectFetchedProperties {
 } ProjectFetchedProperties;
 
+@class Activity;
 
 
 
@@ -27,16 +29,6 @@ extern const struct ProjectFetchedProperties {
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
 - (ProjectID*)objectID;
-
-
-
-
-
-@property (nonatomic, strong) NSString* path;
-
-
-
-//- (BOOL)validatePath:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -56,20 +48,36 @@ extern const struct ProjectFetchedProperties {
 
 
 
+@property (nonatomic, strong) NSString* xmlFilePath;
+
+
+
+//- (BOOL)validateXmlFilePath:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
+@property (nonatomic, strong) NSSet *activities;
+
+- (NSMutableSet*)activitiesSet;
+
+
+
+
 
 @end
 
 @interface _Project (CoreDataGeneratedAccessors)
 
+- (void)addActivities:(NSSet*)value_;
+- (void)removeActivities:(NSSet*)value_;
+- (void)addActivitiesObject:(Activity*)value_;
+- (void)removeActivitiesObject:(Activity*)value_;
+
 @end
 
 @interface _Project (CoreDataGeneratedPrimitiveAccessors)
-
-
-- (NSString*)primitivePath;
-- (void)setPrimitivePath:(NSString*)value;
-
-
 
 
 - (NSNumber*)primitiveProjectID;
@@ -79,6 +87,17 @@ extern const struct ProjectFetchedProperties {
 - (void)setPrimitiveProjectIDValue:(int16_t)value_;
 
 
+
+
+- (NSString*)primitiveXmlFilePath;
+- (void)setPrimitiveXmlFilePath:(NSString*)value;
+
+
+
+
+
+- (NSMutableSet*)primitiveActivities;
+- (void)setPrimitiveActivities:(NSMutableSet*)value;
 
 
 @end

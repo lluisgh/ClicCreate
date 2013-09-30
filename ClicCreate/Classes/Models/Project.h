@@ -7,7 +7,9 @@
 
 @property (strong, nonatomic) ProjectSettings *projectSettings;
 @property (strong, nonatomic) ActivitySequence *activitySequence;
-@property (strong, nonatomic) NSArray *activities;
+@property (strong, nonatomic) NSSet *activities;
 @property (strong, nonatomic) NSArray *media;
+
+- (void)loadXML;
 
 @end

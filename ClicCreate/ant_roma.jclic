@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="ant_roma" version="0.1.3">
+ <settings>
+  <title>Antiga Roma</title>
+  <revision description="Creació del paquet d'activitats en Clic 3.0" date="3/25/09" />
+  <revision description="Conversió de Clic3 a JClic" date="3/25/09">
+   <author name="Equip Clic" mail="clic@xtec.net" organization="Àrea TIC - Departament d'Educació" />
+  </revision>
+  <author name="Montse Alsius" mail="malsius2@xtec.cat" />
+  <organization name="IES Viladecavalls" mail="a8053261@centres.xtec.es" url="http://www.xtec.es/centres/a8053261" city="Viladecavalls" state="Catalunya" />
+  <language>català</language>
+  <description>
+   <p>Conjunt d'activitats sobre  la història de l'Antiga Roma, de molt fàcil resolució, per treballar amb alumnes de 1r d'ESO i també de primària. Són activitats pensades per repassar continguts bàsics d'aquest tema.</p>
+  </description>
+  <descriptors area="Ciències socials" level="Primària (6-12), Secundària (12-16)">història de roma</descriptors>
+  <skin file="@simple.xml" />
+ </settings>
+ <sequence>
+  <item id="start" name="inici" navButtons="fwd" />
+  <item id="start" name="Les etapes de la historia de Roma" />
+  <item name="associacio detapes i fets" />
+  <item id="start" name="Sopa de lletres" />
+  <item name="associacioinstitucions republica" />
+  <item name="memoria" />
+  <item name="informaciodeus" />
+  <item name="relacionadeus" />
+  <item name="imatgeciutat romana" />
+  <item name="relacionar mostres dart" navButtons="back" />
+ </sequence>
+ <activities>
+  <activity class="@associations.SimpleAssociation" name="Les etapes de la historia de Roma" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <color background="0xCC99FF" />
+      <gradient source="0xCC99FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Relaciona cada etapa de la història de Roma amb els anys que li correponen.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xCC99FF" />
+      <gradient source="0xCC99FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Perfecte !</p>
+    </cell>
+   </messages>
+   <settings margin="5" useOrder="true" dragCells="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>monarquia 753-509 aC</p>
+    </helpWindow>
+    <container bgColor="0xFFFFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCC99FF" border="true" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="137.0" cellHeight="54.0" border="true" id="primary">
+    <style margin="10" borderStroke="0.7" markerStroke="5.0">
+     <color inactive="0xFF3300" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell border="true">
+     <style shadow="true" borderStroke="2.1" markerStroke="5.0">
+      <color background="0xCCCCFF" shadow="0xCCCCFF" inactive="0x9999FF" alternative="0x9999FF" border="0x3300CC" />
+     </style>
+     <p>MONARQUIA</p>
+    </cell>
+    <cell border="true">
+     <style shadow="true" borderStroke="1.9" markerStroke="5.0">
+      <color background="0xCCCCFF" shadow="0xCCCCFF" inactive="0x9999FF" alternative="0x9999FF" border="0x3300CC" />
+     </style>
+     <p>REPÚBLICA</p>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="1.7" markerStroke="5.0">
+      <color background="0xCCCCFF" shadow="0xCCCCFF" inactive="0x9999FF" alternative="0x9999FF" border="0x3300CC" />
+     </style>
+     <p>IMPERI</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="137.0" cellHeight="54.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="14" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell txtAlign="left,middle" border="true">
+     <style shadow="true" borderStroke="1.7" markerStroke="5.0">
+      <color background="0xFFCC99" shadow="0xCCCCFF" inactive="0xFF9966" alternative="0xFF6666" border="0x333333" />
+     </style>
+     <p>753 aC- 509 aC</p>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="2.3" markerStroke="2.7">
+      <color background="0xFFCC99" shadow="0xCCCCFF" inactive="0xFF9966" alternative="0xFF6666" border="0x333333" />
+     </style>
+     <p>509 aC-27 aC</p>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="1.7" markerStroke="2.7">
+      <color background="0xFFCC99" shadow="0xCCCCFF" inactive="0xFF9966" alternative="0xFF6666" border="0x333333" />
+     </style>
+     <p>27 aC- 476 dC</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="Sopa de lletres" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0xCC99FF" />
+      <gradient source="0xCC99FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Busca a aquesta sopa de lletres el nom de 7 pobles, habitants de la Península Itàlica el segle VII aC.</p>
+    </cell>
+    <cell border="true" type="final">
+     <style>
+      <color background="0xCC99FF" />
+      <gradient source="0xCC99FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>MOLT BÉ ! ELS HAS TROBAT TOTS</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color background="0xCC99FF" />
+      <gradient source="0xCC99FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>ENCARA NO ELS HAS TROBAT TOTS. TORNA-HO A PROVAR</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCCCC" border="true" />
+   </settings>
+   <textGrid rows="9" columns="9" cellWidth="20.0" cellHeight="19.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="17" bold="true" />
+     <color foreground="0x660000" background="0xFF9999" />
+    </style>
+    <text>
+     <row>ABC******</row>
+     <row>DEF******</row>
+     <row>GOHUMBRES</row>
+     <row>S*****T*A</row>
+     <row>*AINMAA*B</row>
+     <row>SAMNITESI</row>
+     <row>*PUNICS*N</row>
+     <row>N**TI***S</row>
+     <row>**LLATINS</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">LLATINS</clue>
+    <clue id="1">UMBRES</clue>
+    <clue id="2">SABINS</clue>
+    <clue id="3">SAMNITES</clue>
+    <clue id="4">PUNICS</clue>
+   </clues>
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="associacio detapes i fets" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="3.1" markerStroke="2.7">
+      <color background="0xCC99FF" />
+      <gradient source="0xCC99FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Relaciona aquests fets amb l'etapa de la Història de Roma que van tenir lloc.</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <color background="0xCC99FF" />
+      <gradient source="0xCC99FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>MOLT BÉ !</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCC99FF" border="true" />
+   </settings>
+   <cells rows="5" cols="1" cellWidth="187.0" cellHeight="68.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell id="0">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="12" />
+      <color background="0xCCCCFF" border="0x330099" />
+     </style>
+     <p>Fundació de Roma</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="12" />
+      <color background="0xCCCCFF" border="0x330099" />
+     </style>
+     <p>Arribada dels romans a la Península Ibèrica</p>
+    </cell>
+    <cell id="2">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="12" />
+      <color background="0xCCCCFF" border="0x330099" />
+     </style>
+     <p>Naixement de Crist</p>
+    </cell>
+    <cell id="2">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="12" />
+      <color background="0xCCCCFF" border="0x330099" />
+     </style>
+     <p>Màxima expansió de l'Imperi</p>
+    </cell>
+    <cell id="2">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="12" />
+      <color background="0xCCCCFF" border="0x330099" />
+     </style>
+     <p>Caiguda de l'Imperi Romà</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="163.0" cellHeight="71.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell border="true">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="12" />
+      <color background="0xFFCCCC" border="0x990000" />
+     </style>
+     <p>MONARQUIA</p>
+     <p>( 753 aC-509 aC )</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="12" />
+      <color background="0xFFCCCC" border="0x990000" />
+     </style>
+     <p>REPÚBLICA</p>
+     <p>( 509 aC- 27 aC )</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="12" />
+      <color background="0xFFCCCC" border="0x990000" />
+     </style>
+     <p>IMPERI</p>
+     <p>(27 aC- 476 dC)</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="associacioinstitucions republica" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCC99FF" />
+      <gradient source="0xCC99FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Relaciona cada institució de la República amb la informació corresponent.</p>
+    </cell>
+    <cell border="true" type="final">
+     <style>
+      <gradient source="0xCC99FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>MOLT BÉ !</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFD2A6">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF99" border="true" />
+    <skin file="@simple.xml" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="136.0" cellHeight="94.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <style borderStroke="4.1" markerStroke="5.0">
+      <font family="Arial" size="12" bold="true" />
+      <color foreground="0x3F3FB9" background="0xCCCCFF" shadow="0x6666FF" inactive="0xFFFFCC" alternative="0x882323" border="0x3300CC" />
+     </style>
+     <p>COMICIS</p>
+    </cell>
+    <cell>
+     <style borderStroke="4.1" markerStroke="5.0">
+      <font family="Arial" size="12" bold="true" />
+      <color foreground="0x3F40BA" background="0xCCCCFF" shadow="0x6666FF" inactive="0xFFFFCC" alternative="0xA10101" border="0x3300CC" />
+     </style>
+     <p>MAGISTRATS</p>
+    </cell>
+    <cell>
+     <style borderStroke="4.1" markerStroke="5.0">
+      <font family="Arial" size="12" bold="true" />
+      <color foreground="0x3F40BA" background="0xCCCCFF" shadow="0x6666FF" inactive="0xFFFFCC" alternative="0x792727" border="0x3300CC" />
+     </style>
+     <p>SENAT</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="176.0" cellHeight="145.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <style borderStroke="4.1" markerStroke="5.0">
+      <font family="Arial" size="12" bold="true" />
+      <color foreground="0x533913" background="0xFECE52" shadow="0x6666FF" inactive="0xF5DD93" alternative="0x792727" border="0xC96D02" />
+     </style>
+     <p>ASSEMBLEA DE CIUTADANS</p>
+    </cell>
+    <cell>
+     <style borderStroke="4.1" markerStroke="5.0">
+      <font family="Arial" size="12" bold="true" />
+      <color foreground="0x533913" background="0xFECE52" shadow="0x6666FF" inactive="0xF4DC93" alternative="0x792727" border="0xC96D02" />
+     </style>
+     <p>FORMEN EL GOVERN DE ROMA I SÓN ELEGITS PER UN ANY</p>
+    </cell>
+    <cell>
+     <style borderStroke="4.1" markerStroke="5.0">
+      <font family="Arial" size="12" bold="true" />
+      <color foreground="0x533913" background="0xFECE52" shadow="0x6666FF" inactive="0xF5DD93" alternative="0x792727" border="0xC96D02" />
+     </style>
+     <p>FORMAT PELS PATRICIS, MÀXIMA AUTORITAT DE ROMA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="imatgeciutat romana" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <gradient source="0xCC99FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Observa aquest croquis d'una ciutat romana.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFFFCC">
+     <image name="croquis_ciutat.jpg" tiled="false" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x000000" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="413.0" cellHeight="241.0" border="false">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0">
+     <style borderStroke="4.1" markerStroke="2.7">
+      <color background="0xDCDCFC" inactive="0x4344A2" border="0x473BA1" />
+     </style>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="informaciodeus" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <gradient source="0xCC99FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Llegeix a quins déus i deesses grecs corresponien els romans i també de què eren responsables.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFCC">
+     <image name="deus.gif" tiled="false" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCCCC" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="386.0" cellHeight="344.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="inici" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCCCC" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="300.0" cellHeight="150.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="GENT1.jpg">
+     <style borderStroke="3.0" markerStroke="2.7">
+      <font family="Arial" size="17" bold="true" />
+      <color foreground="0x990000" border="0x990000" />
+     </style>
+     <p>ELS ROMANS</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@memory.MemoryGame" name="memoria" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Busca les parelles</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>MOLT BÉ</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCC66" border="true" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="50.0" border="true" id="primary">
+    <style borderStroke="2.3" markerStroke="5.0">
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFCCCC" border="0xFF9900" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="soldatcavall.gif" />
+    <cell image="romul_rem.jpg" />
+    <cell image="plebeia.jpg" />
+    <cell image="patricia.jpg" />
+    <cell image="patrici.gif" />
+    <cell image="esclau1.jpg" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="relacionadeus" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <color background="0xCC99FF" />
+      <gradient source="0xCC99FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Relaciona el nom dels déus i deesses amb les responsabilitats que els corresponen.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xCC99FF" />
+      <gradient source="0xCC99FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>MOLT BÉ !</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFBCA7F">
+     <gradient source="0xFFC766" dest="0xFBE7BB" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCC99FF" border="true" />
+   </settings>
+   <cells rows="6" cols="1" cellWidth="80.0" cellHeight="61.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="12" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell>
+     <style borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="12" />
+      <color background="0xDCDCFC" inactive="0x4344A2" border="0x473BA1" />
+     </style>
+     <p>Júpiter</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="12" />
+      <color background="0xDCDCFC" inactive="0x4344A2" border="0x473BA1" />
+     </style>
+     <p>Juno</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="12" />
+      <color background="0xDCDCFC" inactive="0x4344A2" border="0x473BA1" />
+     </style>
+     <p>Minerva</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="12" />
+      <color background="0xDCDCFC" inactive="0x4344A2" border="0x473BA1" />
+     </style>
+     <p>Apol·lo</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="10" />
+      <color background="0xDCDCFC" inactive="0x4344A2" border="0x473BA1" />
+     </style>
+     <p>Venus</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="12" />
+      <color background="0xDCDCFC" inactive="0x4344A2" border="0x473BA1" />
+     </style>
+     <p>Vulcà</p>
+    </cell>
+   </cells>
+   <cells rows="6" cols="1" cellWidth="360.0" cellHeight="61.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell>
+     <style borderStroke="3.6" markerStroke="5.0">
+      <font family="Arial" size="12" />
+      <color background="0xFFCC99" inactive="0xFFFFCC" border="0x8A540E" />
+     </style>
+     <p>Déu suprem i senyor del cel</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="12" />
+      <color background="0xFFCC99" inactive="0xFFFFCC" border="0x996600" />
+     </style>
+     <p>Deessa del matrimoni</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="12" />
+      <color background="0xFFCC99" inactive="0xFFFFCC" border="0x996600" />
+     </style>
+     <p>Deessa de la intel·ligència i de les arts</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="12" />
+      <color background="0xFFCC99" inactive="0xFFFFCC" border="0x996600" />
+     </style>
+     <p>Déu de la llum i de les belles arts</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="12" />
+      <color background="0xFFCC99" inactive="0xFFFFCC" border="0x996600" />
+     </style>
+     <p>Deessa de l'amor i de la bellesa</p>
+    </cell>
+    <cell>
+     <style borderStroke="3.6" markerStroke="2.7">
+      <font family="Arial" size="12" />
+      <color background="0xFFCC99" inactive="0xFFFFCC" border="0x996600" />
+     </style>
+     <p>Déu del foc</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="relacionar mostres dart" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <gradient source="0xCC99FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Relaciona les imatges amb els seus noms.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <gradient source="0xCC99FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>PERFECTE!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xD99C5E">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x663300" border="true" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="120.0" cellHeight="71.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="14" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <style borderStroke="4.8" markerStroke="2.7">
+      <font family="Arial" size="14" />
+      <color background="0xFFFFCC" inactive="0xCC9900" border="0x996600" />
+     </style>
+     <p>AMFITEATRE</p>
+    </cell>
+    <cell>
+     <style borderStroke="4.8" markerStroke="2.7">
+      <font family="Arial" size="14" />
+      <color background="0xFFFFCC" inactive="0xCC9900" border="0x996600" />
+     </style>
+     <p>AQUEDUCTE</p>
+    </cell>
+    <cell>
+     <style borderStroke="4.8" markerStroke="2.7">
+      <font family="Arial" size="14" />
+      <color background="0xFFFFCC" inactive="0xCC9900" border="0x996600" />
+     </style>
+     <p>CIUTAT ROMANA</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="5.1" markerStroke="2.7">
+      <font family="Arial" size="14" />
+      <color background="0xFFFFCC" border="0x996600" />
+     </style>
+     <p>TEATRE</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="5.1" markerStroke="2.7">
+      <font family="Arial" size="14" />
+      <color background="0xFFFFCC" border="0x996600" />
+     </style>
+     <p>TEMPLE</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="5.1" markerStroke="2.7">
+      <font family="Arial" size="14" />
+      <color background="0xFFFFCC" border="0x996600" />
+     </style>
+     <p>CIRC</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="120.0" cellHeight="105.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="amfiteatre1.jpg">
+     <style borderStroke="4.8" markerStroke="2.7">
+      <color background="0xFFFFCC" inactive="0xCC9900" border="0x996600" />
+     </style>
+    </cell>
+    <cell image="aqueducte.jpg">
+     <style borderStroke="4.8" markerStroke="2.7">
+      <color background="0xFFFFCC" inactive="0xCC9900" border="0x996600" />
+     </style>
+    </cell>
+    <cell image="imatges/tarraco.png">
+     <style borderStroke="4.8" markerStroke="2.7">
+      <color background="0xFFFFCC" inactive="0xCC9900" border="0x996600" />
+     </style>
+    </cell>
+    <cell border="true" image="teatre1.jpg">
+     <style borderStroke="5.1" markerStroke="2.7">
+      <color background="0xFFFFCC" border="0x996600" />
+     </style>
+    </cell>
+    <cell border="true" image="temple.jpg">
+     <style borderStroke="5.1" markerStroke="2.7">
+      <color background="0xFFFFCC" border="0x996600" />
+     </style>
+    </cell>
+    <cell border="true" image="circ1.jpg">
+     <style borderStroke="5.1" markerStroke="2.7">
+      <color background="0xFFFFCC" border="0x996600" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="deus.gif" file="deus.gif" />
+  <media name="patrici.gif" file="patrici.gif" />
+  <media name="soldatcavall.gif" file="soldatcavall.gif" />
+  <media name="amfiteatre1.jpg" file="amfiteatre1.jpg" />
+  <media name="aqueducte.jpg" file="aqueducte.jpg" />
+  <media name="circ1.jpg" file="circ1.jpg" />
+  <media name="croquis_ciutat.jpg" file="croquis_ciutat.jpg" />
+  <media name="divisio_imperi.jpg" file="divisio_imperi.jpg" />
+  <media name="esclau1.jpg" file="esclau1.jpg" />
+  <media name="esclaus2.jpg" file="esclaus2.jpg" />
+  <media name="esquema_imperi.jpg" file="esquema_imperi.jpg" />
+  <media name="esquema_republica.jpg" file="esquema_roma.jpg" />
+  <media name="exercit.jpg" file="exercit.jpg" />
+  <media name="funcionaris.jpg" file="funcionaris.jpg" />
+  <media name="GENT1.jpg" file="GENT1.jpg" />
+  <media name="Imperio_Romano[1].jpg" file="Imperio_Romano[1].jpg" />
+  <media name="mapamutlat.jpg" file="mapamutlat.jpg" />
+  <media name="patricia.jpg" file="patricia.jpg" />
+  <media name="patricis.jpg" file="patricis.jpg" />
+  <media name="plebeia.jpg" file="plebeia.jpg" />
+  <media name="plebeus2.jpg" file="plebeus2.jpg" />
+  <media name="romul_rem.jpg" file="romul_rem.jpg" />
+  <media name="teatre1.jpg" file="teatre1.jpg" />
+  <media name="temple.jpg" file="temple.jpg" />
+  <media name="imatges/tarraco.png" file="imatges/tarraco.png" />
+  <media name="tarraco.png" file="tarraco.png" />
+ </mediaBag>
+</JClicProject>
+

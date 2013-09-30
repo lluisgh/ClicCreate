@@ -10,4 +10,10 @@
 
 @implementation ProjectSettings
 
++ (ProjectSettings *)projectSettingsFromXML:(GDataXMLElement *)xmlElement
+{
+    
+    return nil;
+}
+
 @end

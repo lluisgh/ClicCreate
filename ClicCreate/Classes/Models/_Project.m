@@ -4,11 +4,12 @@
 #import "_Project.h"
 
 const struct ProjectAttributes ProjectAttributes = {
-	.path = @"path",
 	.projectID = @"projectID",
+	.xmlFilePath = @"xmlFilePath",
 };
 
 const struct ProjectRelationships ProjectRelationships = {
+	.activities = @"activities",
 };
 
 const struct ProjectFetchedProperties ProjectFetchedProperties = {
@@ -52,13 +53,6 @@ const struct ProjectFetchedProperties ProjectFetchedProperties = {
 
 
 
-@dynamic path;
-
-
-
-
-
-
 @dynamic projectID;
 
 
@@ -84,6 +78,26 @@ const struct ProjectFetchedProperties ProjectFetchedProperties = {
 
 
 
+
+@dynamic xmlFilePath;
+
+
+
+
+
+
+@dynamic activities;
+
+	
+- (NSMutableSet*)activitiesSet {
+	[self willAccessValueForKey:@"activities"];
+  
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"activities"];
+  
+	[self didAccessValueForKey:@"activities"];
+	return result;
+}
+	
 
 
 

@@ -10,4 +10,10 @@
 
 @implementation ActivitySequence
 
++ (ActivitySequence *)activitySequenceFromXML:(GDataXMLElement *)xmlElement
+{
+    
+    return nil;
+}
+
 @end

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "Project.h"
+
 @implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -20,6 +22,15 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    Project *project = [Project insertInManagedObjectContext:[self managedObjectContext]];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"ant_roma" ofType:@"jclic"];
+    
+    [project setXmlFilePath:path];
+    
+    [project loadXML];
+    
+    [self saveContext];
     return YES;
 }
 

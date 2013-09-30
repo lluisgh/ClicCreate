@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#import "GDataXMLNode.h"
+
 @interface ProjectSettings : NSObject
+
++ (ProjectSettings *)projectSettingsFromXML:(GDataXMLElement *)xmlElement;
 
 @end
