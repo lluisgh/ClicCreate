@@ -28,6 +28,9 @@
 		2F4EEC1717EE085C002F39A9 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EEC1517EE085C002F39A9 /* Project.m */; };
 		2F917DF717EF6F7200402A0A /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F917DF617EF6F7200402A0A /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2F917DFA17EF70C600402A0A /* ant_roma.jclic in Resources */ = {isa = PBXBuildFile; fileRef = 2F917DF917EF70C600402A0A /* ant_roma.jclic */; };
+		2FB7097217FC7C6B00C1AC3C /* Revision.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7097117FC7C6B00C1AC3C /* Revision.m */; };
+		2FB7097817FC7C8F00C1AC3C /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7097717FC7C8F00C1AC3C /* Author.m */; };
+		2FB7097B17FC859100C1AC3C /* Organization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7097A17FC859100C1AC3C /* Organization.m */; };
 		2FDD9DEE17F9D2C200BA3B32 /* _Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDD9DED17F9D2C200BA3B32 /* _Activity.m */; };
 		2FFE41FC17F34F2800F315A7 /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE41FB17F34F2800F315A7 /* Activity.m */; };
 		2FFE41FF17F34F3600F315A7 /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE41FE17F34F3600F315A7 /* Media.m */; };
@@ -74,6 +77,12 @@
 		2F917DF617EF6F7200402A0A /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
 		2F917DF817EF6F9500402A0A /* GDataXMLNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
 		2F917DF917EF70C600402A0A /* ant_roma.jclic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ant_roma.jclic; sourceTree = "<group>"; };
+		2FB7097017FC7C6B00C1AC3C /* Revision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Revision.h; path = Classes/Models/Revision.h; sourceTree = "<group>"; };
+		2FB7097117FC7C6B00C1AC3C /* Revision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Revision.m; path = Classes/Models/Revision.m; sourceTree = "<group>"; };
+		2FB7097617FC7C8F00C1AC3C /* Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Author.h; path = Classes/Models/Author.h; sourceTree = "<group>"; };
+		2FB7097717FC7C8F00C1AC3C /* Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Author.m; path = Classes/Models/Author.m; sourceTree = "<group>"; };
+		2FB7097917FC859100C1AC3C /* Organization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Organization.h; path = Classes/Models/Organization.h; sourceTree = "<group>"; };
+		2FB7097A17FC859100C1AC3C /* Organization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Organization.m; path = Classes/Models/Organization.m; sourceTree = "<group>"; };
 		2FDD9DEC17F9D2C200BA3B32 /* _Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Activity.h; path = Classes/Models/_Activity.h; sourceTree = "<group>"; };
 		2FDD9DED17F9D2C200BA3B32 /* _Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Activity.m; path = Classes/Models/_Activity.m; sourceTree = "<group>"; };
 		2FFE41FA17F34F2800F315A7 /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Activity.h; path = Classes/Models/Activity.h; sourceTree = "<group>"; };
@@ -211,6 +220,12 @@
 				2FFE41FB17F34F2800F315A7 /* Activity.m */,
 				2FFE41FD17F34F3600F315A7 /* Media.h */,
 				2FFE41FE17F34F3600F315A7 /* Media.m */,
+				2FB7097017FC7C6B00C1AC3C /* Revision.h */,
+				2FB7097117FC7C6B00C1AC3C /* Revision.m */,
+				2FB7097617FC7C8F00C1AC3C /* Author.h */,
+				2FB7097717FC7C8F00C1AC3C /* Author.m */,
+				2FB7097917FC859100C1AC3C /* Organization.h */,
+				2FB7097A17FC859100C1AC3C /* Organization.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -356,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB7097817FC7C8F00C1AC3C /* Author.m in Sources */,
 				2F4EEC0E17EE079B002F39A9 /* ProjectSettings.m in Sources */,
 				2FFE41FC17F34F2800F315A7 /* Activity.m in Sources */,
 				2F917DF717EF6F7200402A0A /* GDataXMLNode.m in Sources */,
@@ -364,8 +380,10 @@
 				2F11D19617EA132900B290C6 /* ClicCreate.xcdatamodeld in Sources */,
 				2FFE41FF17F34F3600F315A7 /* Media.m in Sources */,
 				2F11D18F17EA132900B290C6 /* main.m in Sources */,
+				2FB7097217FC7C6B00C1AC3C /* Revision.m in Sources */,
 				2FDD9DEE17F9D2C200BA3B32 /* _Activity.m in Sources */,
 				2F4EEC1717EE085C002F39A9 /* Project.m in Sources */,
+				2FB7097B17FC859100C1AC3C /* Organization.m in Sources */,
 				2F4EEC1617EE085C002F39A9 /* _Project.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
