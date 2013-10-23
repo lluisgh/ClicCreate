@@ -12,6 +12,11 @@
 
 @interface ActivitySequence : NSObject
 
+@property (assign, nonatomic) NSUInteger currentActivity;
+@property (strong, nonatomic) NSMutableArray *elements;
+
+
+
 + (ActivitySequence *)activitySequenceFromXML:(GDataXMLElement *)xmlElement;
 
 @end

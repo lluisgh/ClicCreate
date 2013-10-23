@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "AppearanceCustomizer.h"
+
 #import "Project.h"
 
 @implementation AppDelegate
@@ -18,9 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
     Project *project = [Project insertInManagedObjectContext:[self managedObjectContext]];
@@ -31,6 +31,9 @@
     [project loadXML];
     
     [self saveContext];
+    
+    [AppearanceCustomizer customizeAppearance];
+    
     return YES;
 }
 

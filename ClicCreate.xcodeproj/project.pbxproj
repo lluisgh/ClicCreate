@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F10F3CA18030A8F00798890 /* ActivitySequenceElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F10F3C918030A8F00798890 /* ActivitySequenceElement.m */; };
 		2F11D18117EA132900B290C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F11D18017EA132900B290C6 /* Foundation.framework */; };
 		2F11D18317EA132900B290C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F11D18217EA132900B290C6 /* CoreGraphics.framework */; };
 		2F11D18517EA132900B290C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F11D18417EA132900B290C6 /* UIKit.framework */; };
@@ -22,16 +23,21 @@
 		2F11D1A217EA132900B290C6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F11D18617EA132900B290C6 /* CoreData.framework */; };
 		2F11D1AA17EA132900B290C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F11D1A817EA132900B290C6 /* InfoPlist.strings */; };
 		2F11D1AC17EA132900B290C6 /* ClicCreateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11D1AB17EA132900B290C6 /* ClicCreateTests.m */; };
+		2F3CC93518032EAF00763A95 /* AppearanceCustomizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3CC93418032EAF00763A95 /* AppearanceCustomizer.m */; };
 		2F4EEC0E17EE079B002F39A9 /* ProjectSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EEC0D17EE079B002F39A9 /* ProjectSettings.m */; };
 		2F4EEC1117EE07AC002F39A9 /* ActivitySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EEC1017EE07AC002F39A9 /* ActivitySequence.m */; };
 		2F4EEC1617EE085C002F39A9 /* _Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EEC1317EE085C002F39A9 /* _Project.m */; };
 		2F4EEC1717EE085C002F39A9 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EEC1517EE085C002F39A9 /* Project.m */; };
-		2F917DF717EF6F7200402A0A /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F917DF617EF6F7200402A0A /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2F917DFA17EF70C600402A0A /* ant_roma.jclic in Resources */ = {isa = PBXBuildFile; fileRef = 2F917DF917EF70C600402A0A /* ant_roma.jclic */; };
 		2FB7097217FC7C6B00C1AC3C /* Revision.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7097117FC7C6B00C1AC3C /* Revision.m */; };
 		2FB7097817FC7C8F00C1AC3C /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7097717FC7C8F00C1AC3C /* Author.m */; };
 		2FB7097B17FC859100C1AC3C /* Organization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7097A17FC859100C1AC3C /* Organization.m */; };
 		2FDD9DEE17F9D2C200BA3B32 /* _Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDD9DED17F9D2C200BA3B32 /* _Activity.m */; };
+		2FF9A6D3180316A3007782C7 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF9A6D2180316A3007782C7 /* Storyboard.storyboard */; };
+		2FF9A6D818031793007782C7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9A6D718031793007782C7 /* HomeViewController.m */; };
+		2FF9A6E6180318B4007782C7 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9A6E5180318B4007782C7 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FF9A6EA18031A0A007782C7 /* ProjectEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9A6E918031A0A007782C7 /* ProjectEditorViewController.m */; };
+		2FF9A6ED18031A68007782C7 /* ExistingProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9A6EC18031A68007782C7 /* ExistingProjectsViewController.m */; };
 		2FFE41FC17F34F2800F315A7 /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE41FB17F34F2800F315A7 /* Activity.m */; };
 		2FFE41FF17F34F3600F315A7 /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE41FE17F34F3600F315A7 /* Media.m */; };
 /* End PBXBuildFile section */
@@ -48,6 +54,8 @@
 
 /* Begin PBXFileReference section */
 		1D96217F78E043E38E6EF11E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F10F3C818030A8F00798890 /* ActivitySequenceElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivitySequenceElement.h; path = Classes/Models/ActivitySequenceElement.h; sourceTree = "<group>"; };
+		2F10F3C918030A8F00798890 /* ActivitySequenceElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivitySequenceElement.m; path = Classes/Models/ActivitySequenceElement.m; sourceTree = "<group>"; };
 		2F11D17D17EA132900B290C6 /* ClicCreate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClicCreate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F11D18017EA132900B290C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2F11D18217EA132900B290C6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,6 +74,8 @@
 		2F11D1A717EA132900B290C6 /* ClicCreateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClicCreateTests-Info.plist"; sourceTree = "<group>"; };
 		2F11D1A917EA132900B290C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2F11D1AB17EA132900B290C6 /* ClicCreateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClicCreateTests.m; sourceTree = "<group>"; };
+		2F3CC93318032EAF00763A95 /* AppearanceCustomizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppearanceCustomizer.h; sourceTree = "<group>"; };
+		2F3CC93418032EAF00763A95 /* AppearanceCustomizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppearanceCustomizer.m; sourceTree = "<group>"; };
 		2F4EEC0C17EE079B002F39A9 /* ProjectSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectSettings.h; path = Classes/Models/ProjectSettings.h; sourceTree = "<group>"; };
 		2F4EEC0D17EE079B002F39A9 /* ProjectSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectSettings.m; path = Classes/Models/ProjectSettings.m; sourceTree = "<group>"; };
 		2F4EEC0F17EE07AC002F39A9 /* ActivitySequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivitySequence.h; path = Classes/Models/ActivitySequence.h; sourceTree = "<group>"; };
@@ -74,8 +84,6 @@
 		2F4EEC1317EE085C002F39A9 /* _Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Project.m; path = Classes/Models/_Project.m; sourceTree = "<group>"; };
 		2F4EEC1417EE085C002F39A9 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Project.h; path = Classes/Models/Project.h; sourceTree = "<group>"; };
 		2F4EEC1517EE085C002F39A9 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Project.m; path = Classes/Models/Project.m; sourceTree = "<group>"; };
-		2F917DF617EF6F7200402A0A /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
-		2F917DF817EF6F9500402A0A /* GDataXMLNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
 		2F917DF917EF70C600402A0A /* ant_roma.jclic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ant_roma.jclic; sourceTree = "<group>"; };
 		2FB7097017FC7C6B00C1AC3C /* Revision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Revision.h; path = Classes/Models/Revision.h; sourceTree = "<group>"; };
 		2FB7097117FC7C6B00C1AC3C /* Revision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Revision.m; path = Classes/Models/Revision.m; sourceTree = "<group>"; };
@@ -85,6 +93,15 @@
 		2FB7097A17FC859100C1AC3C /* Organization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Organization.m; path = Classes/Models/Organization.m; sourceTree = "<group>"; };
 		2FDD9DEC17F9D2C200BA3B32 /* _Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Activity.h; path = Classes/Models/_Activity.h; sourceTree = "<group>"; };
 		2FDD9DED17F9D2C200BA3B32 /* _Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Activity.m; path = Classes/Models/_Activity.m; sourceTree = "<group>"; };
+		2FF9A6D2180316A3007782C7 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		2FF9A6D618031793007782C7 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Classes/Controllers/HomeViewController.h; sourceTree = "<group>"; };
+		2FF9A6D718031793007782C7 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Classes/Controllers/HomeViewController.m; sourceTree = "<group>"; };
+		2FF9A6E4180318B4007782C7 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		2FF9A6E5180318B4007782C7 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		2FF9A6E818031A0A007782C7 /* ProjectEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectEditorViewController.h; path = Classes/Controllers/ProjectEditorViewController.h; sourceTree = "<group>"; };
+		2FF9A6E918031A0A007782C7 /* ProjectEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectEditorViewController.m; path = Classes/Controllers/ProjectEditorViewController.m; sourceTree = "<group>"; };
+		2FF9A6EB18031A68007782C7 /* ExistingProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExistingProjectsViewController.h; path = Classes/Controllers/ExistingProjectsViewController.h; sourceTree = "<group>"; };
+		2FF9A6EC18031A68007782C7 /* ExistingProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExistingProjectsViewController.m; path = Classes/Controllers/ExistingProjectsViewController.m; sourceTree = "<group>"; };
 		2FFE41FA17F34F2800F315A7 /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Activity.h; path = Classes/Models/Activity.h; sourceTree = "<group>"; };
 		2FFE41FB17F34F2800F315A7 /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Activity.m; path = Classes/Models/Activity.m; sourceTree = "<group>"; };
 		2FFE41FD17F34F3600F315A7 /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
@@ -125,6 +142,7 @@
 				2F11D1A517EA132900B290C6 /* ClicCreateTests */,
 				2F11D17F17EA132900B290C6 /* Frameworks */,
 				2F11D17E17EA132900B290C6 /* Products */,
+				2FF9A6E2180318B4007782C7 /* Vendor */,
 				4A5A18C8E1F74692ABED9401 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
@@ -159,6 +177,7 @@
 				2F11D19217EA132900B290C6 /* AppDelegate.m */,
 				2F11D19717EA132900B290C6 /* Images.xcassets */,
 				2F11D19417EA132900B290C6 /* ClicCreate.xcdatamodeld */,
+				2FF9A6D2180316A3007782C7 /* Storyboard.storyboard */,
 				2F11D18917EA132900B290C6 /* Supporting Files */,
 			);
 			path = ClicCreate;
@@ -194,11 +213,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2F3CC93218032E9E00763A95 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2F3CC93318032EAF00763A95 /* AppearanceCustomizer.h */,
+				2F3CC93418032EAF00763A95 /* AppearanceCustomizer.m */,
+			);
+			name = Managers;
+			path = Classes/Managers;
+			sourceTree = "<group>";
+		};
 		2F4EEC0A17EE075A002F39A9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2F917DF517EF6F6400402A0A /* GDataXML */,
+				2F3CC93218032E9E00763A95 /* Managers */,
 				2F4EEC0B17EE075F002F39A9 /* Models */,
+				2FF9A6D418031717007782C7 /* Controllers */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -226,17 +256,40 @@
 				2FB7097717FC7C8F00C1AC3C /* Author.m */,
 				2FB7097917FC859100C1AC3C /* Organization.h */,
 				2FB7097A17FC859100C1AC3C /* Organization.m */,
+				2F10F3C818030A8F00798890 /* ActivitySequenceElement.h */,
+				2F10F3C918030A8F00798890 /* ActivitySequenceElement.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
 		};
-		2F917DF517EF6F6400402A0A /* GDataXML */ = {
+		2FF9A6D418031717007782C7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2F917DF817EF6F9500402A0A /* GDataXMLNode.h */,
-				2F917DF617EF6F7200402A0A /* GDataXMLNode.m */,
+				2FF9A6D618031793007782C7 /* HomeViewController.h */,
+				2FF9A6D718031793007782C7 /* HomeViewController.m */,
+				2FF9A6E818031A0A007782C7 /* ProjectEditorViewController.h */,
+				2FF9A6E918031A0A007782C7 /* ProjectEditorViewController.m */,
+				2FF9A6EB18031A68007782C7 /* ExistingProjectsViewController.h */,
+				2FF9A6EC18031A68007782C7 /* ExistingProjectsViewController.m */,
 			);
-			name = GDataXML;
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2FF9A6E2180318B4007782C7 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				2FF9A6E3180318B4007782C7 /* GDataXML */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		2FF9A6E3180318B4007782C7 /* GDataXML */ = {
+			isa = PBXGroup;
+			children = (
+				2FF9A6E4180318B4007782C7 /* GDataXMLNode.h */,
+				2FF9A6E5180318B4007782C7 /* GDataXMLNode.m */,
+			);
+			path = GDataXML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +342,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Lluís Gómez Hernando";
 				TargetAttributes = {
+					2F11D17C17EA132900B290C6 = {
+						DevelopmentTeam = YVTXXRR8L8;
+					};
 					2F11D19C17EA132900B290C6 = {
 						TestTargetID = 2F11D17C17EA132900B290C6;
 					};
@@ -318,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F11D18D17EA132900B290C6 /* InfoPlist.strings in Resources */,
+				2FF9A6D3180316A3007782C7 /* Storyboard.storyboard in Resources */,
 				2F11D19817EA132900B290C6 /* Images.xcassets in Resources */,
 				2F917DFA17EF70C600402A0A /* ant_roma.jclic in Resources */,
 			);
@@ -372,14 +429,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FB7097817FC7C8F00C1AC3C /* Author.m in Sources */,
+				2FF9A6E6180318B4007782C7 /* GDataXMLNode.m in Sources */,
+				2FF9A6EA18031A0A007782C7 /* ProjectEditorViewController.m in Sources */,
 				2F4EEC0E17EE079B002F39A9 /* ProjectSettings.m in Sources */,
 				2FFE41FC17F34F2800F315A7 /* Activity.m in Sources */,
-				2F917DF717EF6F7200402A0A /* GDataXMLNode.m in Sources */,
+				2F10F3CA18030A8F00798890 /* ActivitySequenceElement.m in Sources */,
 				2F11D19317EA132900B290C6 /* AppDelegate.m in Sources */,
 				2F4EEC1117EE07AC002F39A9 /* ActivitySequence.m in Sources */,
+				2FF9A6D818031793007782C7 /* HomeViewController.m in Sources */,
 				2F11D19617EA132900B290C6 /* ClicCreate.xcdatamodeld in Sources */,
 				2FFE41FF17F34F3600F315A7 /* Media.m in Sources */,
+				2F3CC93518032EAF00763A95 /* AppearanceCustomizer.m in Sources */,
 				2F11D18F17EA132900B290C6 /* main.m in Sources */,
+				2FF9A6ED18031A68007782C7 /* ExistingProjectsViewController.m in Sources */,
 				2FB7097217FC7C6B00C1AC3C /* Revision.m in Sources */,
 				2FDD9DEE17F9D2C200BA3B32 /* _Activity.m in Sources */,
 				2F4EEC1717EE085C002F39A9 /* Project.m in Sources */,
@@ -443,7 +505,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -483,7 +545,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -506,10 +568,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClicCreate/ClicCreate-Prefix.pch";
 				INFOPLIST_FILE = "ClicCreate/ClicCreate-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -520,10 +585,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClicCreate/ClicCreate-Prefix.pch";
 				INFOPLIST_FILE = "ClicCreate/ClicCreate-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
