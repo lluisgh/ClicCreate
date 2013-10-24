@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-@interface ExistingProjectsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface ProjectsViewController : UITableViewController
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSArray *projectFiles;
 
 - (IBAction)cancel:(id)sender;
+
+- (void)updateProjectFiles;
+- (void)configureCell:(UITableViewCell *)cell forIndexPath:(NSIndexPath *)indexPath;
 
 @end

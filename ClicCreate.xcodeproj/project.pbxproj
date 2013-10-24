@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F841AA32C774DE387E6082F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D96217F78E043E38E6EF11E /* libPods.a */; };
 		2F10F3CA18030A8F00798890 /* ActivitySequenceElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F10F3C918030A8F00798890 /* ActivitySequenceElement.m */; };
 		2F11D18117EA132900B290C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F11D18017EA132900B290C6 /* Foundation.framework */; };
 		2F11D18317EA132900B290C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F11D18217EA132900B290C6 /* CoreGraphics.framework */; };
@@ -28,6 +29,9 @@
 		2F4EEC1117EE07AC002F39A9 /* ActivitySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EEC1017EE07AC002F39A9 /* ActivitySequence.m */; };
 		2F4EEC1617EE085C002F39A9 /* _Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EEC1317EE085C002F39A9 /* _Project.m */; };
 		2F4EEC1717EE085C002F39A9 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EEC1517EE085C002F39A9 /* Project.m */; };
+		2F566F3018198D98005703F0 /* LocalProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F566F2F18198D98005703F0 /* LocalProjectsViewController.m */; };
+		2F566F3318198DA7005703F0 /* DropboxProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F566F3218198DA7005703F0 /* DropboxProjectsViewController.m */; };
+		2F566F36181992A8005703F0 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F566F34181990F1005703F0 /* libxml2.dylib */; };
 		2F917DFA17EF70C600402A0A /* ant_roma.jclic in Resources */ = {isa = PBXBuildFile; fileRef = 2F917DF917EF70C600402A0A /* ant_roma.jclic */; };
 		2FB7097217FC7C6B00C1AC3C /* Revision.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7097117FC7C6B00C1AC3C /* Revision.m */; };
 		2FB7097817FC7C8F00C1AC3C /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7097717FC7C8F00C1AC3C /* Author.m */; };
@@ -37,7 +41,7 @@
 		2FF9A6D818031793007782C7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9A6D718031793007782C7 /* HomeViewController.m */; };
 		2FF9A6E6180318B4007782C7 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9A6E5180318B4007782C7 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2FF9A6EA18031A0A007782C7 /* ProjectEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9A6E918031A0A007782C7 /* ProjectEditorViewController.m */; };
-		2FF9A6ED18031A68007782C7 /* ExistingProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9A6EC18031A68007782C7 /* ExistingProjectsViewController.m */; };
+		2FF9A6ED18031A68007782C7 /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9A6EC18031A68007782C7 /* ProjectsViewController.m */; };
 		2FFE41FC17F34F2800F315A7 /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE41FB17F34F2800F315A7 /* Activity.m */; };
 		2FFE41FF17F34F3600F315A7 /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE41FE17F34F3600F315A7 /* Media.m */; };
 /* End PBXBuildFile section */
@@ -84,6 +88,11 @@
 		2F4EEC1317EE085C002F39A9 /* _Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Project.m; path = Classes/Models/_Project.m; sourceTree = "<group>"; };
 		2F4EEC1417EE085C002F39A9 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Project.h; path = Classes/Models/Project.h; sourceTree = "<group>"; };
 		2F4EEC1517EE085C002F39A9 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Project.m; path = Classes/Models/Project.m; sourceTree = "<group>"; };
+		2F566F2E18198D98005703F0 /* LocalProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocalProjectsViewController.h; path = Classes/Controllers/LocalProjectsViewController.h; sourceTree = "<group>"; };
+		2F566F2F18198D98005703F0 /* LocalProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocalProjectsViewController.m; path = Classes/Controllers/LocalProjectsViewController.m; sourceTree = "<group>"; };
+		2F566F3118198DA7005703F0 /* DropboxProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropboxProjectsViewController.h; sourceTree = "<group>"; };
+		2F566F3218198DA7005703F0 /* DropboxProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropboxProjectsViewController.m; sourceTree = "<group>"; };
+		2F566F34181990F1005703F0 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		2F917DF917EF70C600402A0A /* ant_roma.jclic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ant_roma.jclic; sourceTree = "<group>"; };
 		2FB7097017FC7C6B00C1AC3C /* Revision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Revision.h; path = Classes/Models/Revision.h; sourceTree = "<group>"; };
 		2FB7097117FC7C6B00C1AC3C /* Revision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Revision.m; path = Classes/Models/Revision.m; sourceTree = "<group>"; };
@@ -100,8 +109,8 @@
 		2FF9A6E5180318B4007782C7 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
 		2FF9A6E818031A0A007782C7 /* ProjectEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectEditorViewController.h; path = Classes/Controllers/ProjectEditorViewController.h; sourceTree = "<group>"; };
 		2FF9A6E918031A0A007782C7 /* ProjectEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectEditorViewController.m; path = Classes/Controllers/ProjectEditorViewController.m; sourceTree = "<group>"; };
-		2FF9A6EB18031A68007782C7 /* ExistingProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExistingProjectsViewController.h; path = Classes/Controllers/ExistingProjectsViewController.h; sourceTree = "<group>"; };
-		2FF9A6EC18031A68007782C7 /* ExistingProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExistingProjectsViewController.m; path = Classes/Controllers/ExistingProjectsViewController.m; sourceTree = "<group>"; };
+		2FF9A6EB18031A68007782C7 /* ProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectsViewController.h; path = Classes/Controllers/ProjectsViewController.h; sourceTree = "<group>"; };
+		2FF9A6EC18031A68007782C7 /* ProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectsViewController.m; path = Classes/Controllers/ProjectsViewController.m; sourceTree = "<group>"; };
 		2FFE41FA17F34F2800F315A7 /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Activity.h; path = Classes/Models/Activity.h; sourceTree = "<group>"; };
 		2FFE41FB17F34F2800F315A7 /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Activity.m; path = Classes/Models/Activity.m; sourceTree = "<group>"; };
 		2FFE41FD17F34F3600F315A7 /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
@@ -114,10 +123,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F566F36181992A8005703F0 /* libxml2.dylib in Frameworks */,
 				2F11D18317EA132900B290C6 /* CoreGraphics.framework in Frameworks */,
 				2F11D18717EA132900B290C6 /* CoreData.framework in Frameworks */,
 				2F11D18517EA132900B290C6 /* UIKit.framework in Frameworks */,
 				2F11D18117EA132900B290C6 /* Foundation.framework in Frameworks */,
+				1F841AA32C774DE387E6082F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +170,7 @@
 		2F11D17F17EA132900B290C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F566F34181990F1005703F0 /* libxml2.dylib */,
 				2F11D18017EA132900B290C6 /* Foundation.framework */,
 				2F11D18217EA132900B290C6 /* CoreGraphics.framework */,
 				2F11D18417EA132900B290C6 /* UIKit.framework */,
@@ -269,8 +281,12 @@
 				2FF9A6D718031793007782C7 /* HomeViewController.m */,
 				2FF9A6E818031A0A007782C7 /* ProjectEditorViewController.h */,
 				2FF9A6E918031A0A007782C7 /* ProjectEditorViewController.m */,
-				2FF9A6EB18031A68007782C7 /* ExistingProjectsViewController.h */,
-				2FF9A6EC18031A68007782C7 /* ExistingProjectsViewController.m */,
+				2FF9A6EB18031A68007782C7 /* ProjectsViewController.h */,
+				2FF9A6EC18031A68007782C7 /* ProjectsViewController.m */,
+				2F566F2E18198D98005703F0 /* LocalProjectsViewController.h */,
+				2F566F2F18198D98005703F0 /* LocalProjectsViewController.m */,
+				2F566F3118198DA7005703F0 /* DropboxProjectsViewController.h */,
+				2F566F3218198DA7005703F0 /* DropboxProjectsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -432,6 +448,7 @@
 				2FF9A6E6180318B4007782C7 /* GDataXMLNode.m in Sources */,
 				2FF9A6EA18031A0A007782C7 /* ProjectEditorViewController.m in Sources */,
 				2F4EEC0E17EE079B002F39A9 /* ProjectSettings.m in Sources */,
+				2F566F3018198D98005703F0 /* LocalProjectsViewController.m in Sources */,
 				2FFE41FC17F34F2800F315A7 /* Activity.m in Sources */,
 				2F10F3CA18030A8F00798890 /* ActivitySequenceElement.m in Sources */,
 				2F11D19317EA132900B290C6 /* AppDelegate.m in Sources */,
@@ -441,11 +458,12 @@
 				2FFE41FF17F34F3600F315A7 /* Media.m in Sources */,
 				2F3CC93518032EAF00763A95 /* AppearanceCustomizer.m in Sources */,
 				2F11D18F17EA132900B290C6 /* main.m in Sources */,
-				2FF9A6ED18031A68007782C7 /* ExistingProjectsViewController.m in Sources */,
+				2FF9A6ED18031A68007782C7 /* ProjectsViewController.m in Sources */,
 				2FB7097217FC7C6B00C1AC3C /* Revision.m in Sources */,
 				2FDD9DEE17F9D2C200BA3B32 /* _Activity.m in Sources */,
 				2F4EEC1717EE085C002F39A9 /* Project.m in Sources */,
 				2FB7097B17FC859100C1AC3C /* Organization.m in Sources */,
+				2F566F3318198DA7005703F0 /* DropboxProjectsViewController.m in Sources */,
 				2F4EEC1617EE085C002F39A9 /* _Project.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,9 +590,15 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClicCreate/ClicCreate-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/Dropbox-iOS-SDK\"",
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "ClicCreate/ClicCreate-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -589,9 +613,15 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClicCreate/ClicCreate-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/Dropbox-iOS-SDK\"",
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "ClicCreate/ClicCreate-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

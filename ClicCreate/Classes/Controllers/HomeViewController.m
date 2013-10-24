@@ -9,6 +9,8 @@
 #import "HomeViewController.h"
 
 #import "ProjectEditorViewController.h"
+#import "LocalProjectsViewController.h"
+#import "DropboxProjectsViewController.h"
 
 @interface HomeViewController ()
 
@@ -40,9 +42,9 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    ProjectEditorViewController *editorViewController = segue.destinationViewController;
-    [editorViewController.navigationItem.backBarButtonItem setTitle:@"Home"];
-
+    if ([segue.identifier isEqualToString:@"NewProject"]) {
+        ProjectEditorViewController *editorViewController = segue.destinationViewController;
+        [editorViewController.navigationItem.backBarButtonItem setTitle:@"Home"];
+    }
 }
-
 @end
