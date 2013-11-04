@@ -26,9 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [self updateProjectFiles];
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -43,15 +42,38 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    
-    [self configureCell:cell forIndexPath:indexPath];
+    if (![self.projectFiles count]) {
+        [self configureNoFilesCell:cell];
+    } else {
+        [self configureCell:cell forIndexPath:indexPath];
+    }
     
     return cell;
 }
 
+- (void)configureNoFilesCell:(UITableViewCell *)cell
+{
+    [cell.imageView setImage:[UIImage new]];
+    [cell.textLabel setText:NSLocalizedString(@"There are no files.", nil)];
+    [cell.detailTextLabel setText:nil];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.projectFiles count];
+    if ([self.projectFiles count]) {
+        return [self.projectFiles count];
+    }
+    
+    return 1; //no files cell
+}
+
+- (NSString *)stringFromDate:(NSDate *)date
+{
+    NSDateFormatter *dateFormatter = [NSDateFormatter new];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    [dateFormatter setLocale:[NSLocale currentLocale]];
+    
+    return [dateFormatter stringFromDate:date];
 }
 
 @end

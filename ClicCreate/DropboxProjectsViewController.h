@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 #import "ProjectsViewController.h"
+#import <DropboxSDK/DropboxSDK.h>
 
-@interface DropboxProjectsViewController : ProjectsViewController
+@interface DropboxProjectsViewController : ProjectsViewController <DBRestClientDelegate>
+
+@property (strong, nonatomic) DBRestClient *dbRestClient;
+- (IBAction)refresh:(id)sender;
 
 @end

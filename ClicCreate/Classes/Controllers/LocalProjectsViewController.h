@@ -11,4 +11,6 @@
 
 @interface LocalProjectsViewController : ProjectsViewController
 
+- (IBAction)refresh:(id)sender;
+
 @end

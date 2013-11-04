@@ -14,7 +14,7 @@
 
 - (IBAction)cancel:(id)sender;
 
-- (void)updateProjectFiles;
 - (void)configureCell:(UITableViewCell *)cell forIndexPath:(NSIndexPath *)indexPath;
+- (NSString *)stringFromDate:(NSDate *)date;
 
 @end

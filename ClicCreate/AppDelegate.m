@@ -9,8 +9,9 @@
 #import "AppDelegate.h"
 
 #import "AppearanceCustomizer.h"
-
 #import "Project.h"
+
+#import <DropboxSDK.h>
 
 @implementation AppDelegate
 
@@ -32,6 +33,12 @@
     
     [self saveContext];
     
+    DBSession* dbSession =
+    [[DBSession alloc] initWithAppKey:@"pycez3qu4hmak2f"
+                            appSecret:@"wske1rmc21ya2t6"
+                                 root:kDBRootAppFolder]; // either kDBRootAppFolder or kDBRootDropbox
+    [DBSession setSharedSession:dbSession];
+
     [AppearanceCustomizer customizeAppearance];
     
     return YES;
@@ -159,5 +166,20 @@
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
+
+#pragma mark - Dropbox
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    if ([[DBSession sharedSession] handleOpenURL:url]) {
+        if ([[DBSession sharedSession] isLinked]) {
+            NSLog(@"App linked successfully!");
+            // At this point you can start making API calls
+        }
+        return YES;
+    }
+    // Add whatever other url handling code your app requires here
+    return NO;
+}
+
 
 @end

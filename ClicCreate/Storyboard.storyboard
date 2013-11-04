@@ -164,6 +164,11 @@
                                 <action selector="cancel:" destination="NXS-0A-Mxo" id="0NJ-na-apQ"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="xXG-y8-Ksv">
+                            <connections>
+                                <action selector="refresh:" destination="NXS-0A-Mxo" id="fgu-vq-od4"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TTE-Jv-63h" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -180,28 +185,28 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="QBw-py-DhW" detailTextLabel="hEM-WW-vol" imageView="f5g-qo-1bn" style="IBUITableViewCellStyleValue1" id="hWU-u4-JRA">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="Yoz-BE-Snf" detailTextLabel="lPV-xu-62u" imageView="PTR-Pk-Sp8" style="IBUITableViewCellStyleValue1" id="8JX-wx-8X4">
                                 <rect key="frame" x="0.0" y="86" width="1024" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hWU-u4-JRA" id="0XH-wt-Sjg">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8JX-wx-8X4" id="cAt-Xp-zBf">
                                     <rect key="frame" x="0.0" y="0.0" width="1024" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QBw-py-DhW">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yoz-BE-Snf">
                                             <rect key="frame" x="61" y="6" width="51" height="32"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hEM-WW-vol">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lPV-xu-62u">
                                             <rect key="frame" x="951" y="9" width="58" height="28"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                             <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="jClicLogo" id="f5g-qo-1bn">
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="jClicLogo" id="PTR-Pk-Sp8">
                                             <rect key="frame" x="15" y="6" width="31" height="31"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
@@ -218,6 +223,11 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ZGn-Ik-acR">
                             <connections>
                                 <action selector="cancel:" destination="dti-8B-tcJ" id="L1T-fZ-KTg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="fNZ-QV-9J7">
+                            <connections>
+                                <action selector="refresh:" destination="dti-8B-tcJ" id="mTa-EX-gfh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
